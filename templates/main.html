@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+</head>
+<body>
+    <div>
+        <h1>Counter</h1>
+        <h3>{{session['contador']}} times</h3>
+        <form action="reset" method="post">
+            <input type="submit" value="reset" name="reset">
+        </form>
+        <form action="aumenta2" method="post">
+            <input type="submit" value="Aumentar 2" name="aumentar2">
+        </form>
+    </div>
+    <style>
+        div,div > h1,h3,form{
+            margin:0 auto;
+            width: 720px;
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            flex-direction: column;
+            margin-top :40px;
+        }
+        form{
+            margin-top :40px;
+            display:flex;
+            justify-content:space-around;
+        }
+    </style>
+</body>
+</html>
